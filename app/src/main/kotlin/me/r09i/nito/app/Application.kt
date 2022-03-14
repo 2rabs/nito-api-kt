@@ -6,6 +6,7 @@ import me.r09i.nito.app.plugins.*
 
 fun main() {
     embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+        configureDependencyInjection()
         configureRouting()
         configureSerialization()
     }.start(wait = true)
