@@ -15,6 +15,8 @@ application {
 }
 
 dependencies {
+    implementation(projects.kernel)
+
     implementation(libs.bundles.ktor)
     implementation(libs.logback.classic)
     testImplementation(libs.ktor.server.tests.jvm)
