@@ -3,6 +3,7 @@ package me.r09i.nito.app.plugins
 import io.ktor.events.EventDefinition
 import io.ktor.server.application.*
 import io.ktor.util.*
+import me.r09i.nito.app.di.applicationModule
 import me.r09i.nito.data.repository.repositoryModule
 import org.koin.core.KoinApplication
 import org.koin.core.context.GlobalContext.startKoin
@@ -14,6 +15,7 @@ fun Application.configureDependencyInjection() {
     install(CustomKoinPlugin) {
         slf4jLogger(Level.ERROR)
         modules(
+            applicationModule(appEnv = environment),
             repositoryModule,
         )
     }
