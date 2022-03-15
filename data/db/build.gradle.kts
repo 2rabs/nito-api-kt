@@ -7,4 +7,6 @@ version = "unspecified"
 
 dependencies {
     implementation(projects.kernel)
+
+    implementation(libs.bundles.exposed)
 }
