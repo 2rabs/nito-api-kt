@@ -16,6 +16,7 @@ application {
 
 dependencies {
     implementation(projects.kernel)
+    implementation(projects.data.repository)
 
     implementation(libs.bundles.ktor)
     implementation(libs.logback.classic)

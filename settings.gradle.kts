@@ -12,3 +12,6 @@ rootProject.name = "nito-api"
 
 include(":app")
 include(":kernel")
+include(":data:db")
+include(":data:api")
+include(":data:repository")
