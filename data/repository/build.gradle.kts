@@ -9,4 +9,6 @@ dependencies {
     implementation(projects.kernel)
     implementation(projects.data.db)
     implementation(projects.data.api)
+
+    implementation(libs.koin.core)
 }
