@@ -8,7 +8,7 @@ group = "me.r09i.nito"
 version = "0.1.0"
 
 application {
-    mainClass.set("me.r09i.nito.app.ApplicationKt")
+    mainClass.set("io.ktor.server.netty.EngineMain")
 
     val isDevelopment: Boolean = project.ext.has("development")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
