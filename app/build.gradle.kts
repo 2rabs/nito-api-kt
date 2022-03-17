@@ -2,6 +2,7 @@ plugins {
     application
     alias(libs.plugins.kotlin)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.shadow)
 }
 
 group = "me.r09i.nito"

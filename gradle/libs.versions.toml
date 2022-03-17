@@ -4,6 +4,7 @@ ktor = "2.0.0-beta-1"
 koin = "3.1.5"
 exposed = "0.37.3"
 logback = "1.2.3"
+shadow = "7.1.2"
 
 [libraries]
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
@@ -46,3 +47,4 @@ exposed = [
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
