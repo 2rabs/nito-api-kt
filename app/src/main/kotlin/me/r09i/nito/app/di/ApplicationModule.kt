@@ -13,7 +13,7 @@ fun applicationModule(appEnv: ApplicationEnvironment) = module {
             )
 
             override val SAMPLE: String = appEnv.stringPropertyOrDefault(
-                path = "ktor.application.sample",
+                path = "nito.sample",
                 defaultValue = "",
             )
         }
