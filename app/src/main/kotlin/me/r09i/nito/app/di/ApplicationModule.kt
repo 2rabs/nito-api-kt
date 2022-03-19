@@ -16,6 +16,10 @@ fun applicationModule(appEnv: ApplicationEnvironment) = module {
                 path = "nito.sample",
                 defaultValue = "",
             )
+            override val LINE_BOT_ENDPOINT: String = appEnv.stringPropertyOrDefault(
+                path = "nito.line.bot.endpoint",
+                defaultValue = "",
+            )
         }
     }
 }

@@ -4,4 +4,5 @@ package me.r09i.nito.kernel
 interface EnvVar {
     val PORT: Int
     val SAMPLE: String
+    val LINE_BOT_ENDPOINT: String
 }
